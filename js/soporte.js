@@ -9,7 +9,6 @@ preguntas.forEach(pregunta => {
         if (respuesta.clientHeight == 0) {
             height = respuesta.scrollHeight;
         }
-
         respuesta.style.height = `${height}px`
     })
 });
