@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <script src="https://kit.fontawesome.com/56f2e91f10.js" crossorigin="anonymous"></script>
+    <title>Mujeres</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Izquierda -->
+        <nav class="navbar navbar_left">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="hombres.html">Hombres</a></li>
+                <li><a href="mujeres.html">Mujeres</a></li>
+                <li><a href="ninos.html">Niños</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+        <!-- Centro -->
+        <nav class="navbar navbar_center">
+            <a href="inicio.html"><img src="../img/logo.png" alt="Logo"></a>
+        </nav>
+        <!-- Derecha -->
+        <nav class="navbar navbar_right">
+            <a id="instagram" href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a id="youtube" href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a id="twitter" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <div id="carrito-icon"><img src="../img/carrito.png" alt=""></div><div class="contenedor_contador"><p id="contador"></p></div>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main>
+        <div id="contenido">
+            <div id="mensajeContenedor">
+            </div>
+            <div class="r-contenido">
+                <div class="select">
+                    <select id="filtrar">
+                        <option value="">Filtrar por...</option>
+                        <option value="menor-precio">Menor a mayor precio</option>
+                        <option value="mayor-precio">Mayor a menor precio</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+                <button id="filtro">Filtrar</button>
+                <div id="catalogoContenedor"></div>
+            </div>
+        </div>
+        <div id="carrito" class="hidden">
+            <div class="carrito-titulo">
+                <img id="cerrar-carrito" src="../img/cerrar.png" alt="">
+                <h3>Carrito</h3>
+            </div>
+            <div id="carrito-lista">
+            </div>
+            <div class="carrito-footer">
+                <div class="carrito-precio">
+                    <p>Precio Total:</p><span class="carrito-precio-total">S/. 0.00</span>
+                </div>
+                <button id="procesar">Procesar</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Logo -->
+        <a href="inicio.html"><img src="../img/logo-footer.png" alt=""></a>
+        <!-- Mapa de sitio -->
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="hombres.html">Hombres</a></li>
+            <li><a href="mujeres.html">Mujeres</a></li>
+            <li><a href="ninos.html">Niños</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+        </ul>
+        <!-- Redes sociales -->
+        <nav class="footer_right">
+            <a id="instagram" href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a id="youtube" href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a id="twitter" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+    </footer>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

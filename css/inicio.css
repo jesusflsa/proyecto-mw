@@ -1,0 +1,300 @@
+h2 {
+    font-size: 2em;
+}
+
+/*  Carrusel Promociones  */
+
+#contenedor_carrusel {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#carrusel {
+    width: 400%;
+    display: flex;
+    transition: all .4s;
+}
+
+.carrusel_img {
+    width: 100%;
+}
+
+/* Botones del carrusel */
+.carrusel_boton {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    color: #00000080;
+    background-color: #ffffff80;
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .25s;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.carrusel_boton:hover {
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+.carrusel_boton_izquierda {
+    left: 10px;
+    float: left;
+}
+
+.carrusel_boton_derecha {
+    right: 10px;
+    float: right;
+}
+
+/* Promociones */
+
+#contenedor_promociones {
+    margin: 0 165px;
+    margin-top: 80px;
+}
+
+.promociones_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.promociones_title h3 a,
+.promociones_title h3 a:visited {
+    text-decoration: none;
+    color: #aaa;
+    transition: .15s;
+}
+
+.promociones_title h3 a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+.promociones_items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+}
+
+.promocion_item {
+    width: 100%;
+    margin-top: 42px;
+}
+
+.promocion_img {
+    width: 100%;
+    height: 80%;
+}
+
+.promocion_item img {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 2em;
+    object-fit: cover;
+}
+
+.promocion_item_desc {
+    margin: 20px 10px;
+}
+
+.promocion_item_desc>* {
+    margin-bottom: 5px;
+}
+
+.promocion_item_price {
+    display: flex;
+    gap: 5px;
+}
+
+.promocion_item_price>* {
+    display: inline;
+}
+
+.promocion_item_desc button {
+    width: 40%;
+    height: 2em;
+}
+
+.promocion_item_desc a,
+.promocion_item_desc a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.promocion_item_desc a:visited {
+    color: #000;
+}
+
+/* Marcas */
+#contenedor_marcas {
+    width: 100%;
+    margin-top: 0px;
+}
+
+#contenedor_marcas h2,
+#contenedor_marcas>div {
+    width: 100%;
+    margin: 1em 0;
+}
+
+#contenedor_marcas h2 {
+    text-align: center;
+}
+
+#contenedor_marcas>div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    gap: 150px;
+
+}
+
+@keyframes alineacion {
+    100% {
+        opacity: 100%;
+        gap: 80px;
+    }
+}
+
+#contenedor_marcas>div>div {
+    width: 72px;
+    height: 72px;
+    opacity: 1;
+    display: flex;
+}
+
+#contenedor_marcas>div>div img {
+    width: 100%;
+}
+
+/* Testimonios */
+
+#contenedor_testimonios {
+    width: 100%;
+    margin-top: 80px;
+    padding: 40px 165px;
+    background-color: #F4F5F7;
+}
+
+#contenedor_testimonios>h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#contenedor_testimonios>* {
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* Caja de testimonios */
+#testimonios {
+    display: flex;
+    justify-content: left;
+    
+}
+
+.testimonio_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+@keyframes aparicion {
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+.testimonio_item>div {
+    border-radius: 30px;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Diseño de la carta del testimonio */
+.testimonio_perfil {
+    padding: 30px;
+    width: 100%;
+}
+
+.testimonio_perfil>* {
+    margin: 10px 0;
+}
+
+.testimonio_perfil>div,
+.testimonio_perfil>h3,
+.testimonio_perfil>p {
+    width: 100%;
+    text-align: center;
+}
+
+.testimonio_perfil img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.testimonio_desc {
+    border-radius: 30px;
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    padding: 30px;
+}
+
+.testimonio_desc::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 44%;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+
+.testimonio_desc>* {
+    margin: 20px 0;
+}
+
+.testimonio_desc p {
+    text-align: center;
+}
+
+.testimonio_desc h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1300px) {
+    .promociones_items {
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+
+@media (max-width: 800px) {
+    .promociones_items {
+        grid-template-columns: repeat(1, 95%);
+    }
+}

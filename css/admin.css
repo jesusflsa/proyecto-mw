@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body
+{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #141C29;
+    padding-top: 80px;
+}
+#download
+{
+    margin: 0 auto;
+}
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.tablas
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.tablas>div
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2D4263;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+}
+
+.tablas>div>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tablas>div>form>input,
+select
+{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: black;
+}
+option
+{
+    color: black;
+}
+.button
+{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    color: black;
+}
+.msjContenedor
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    height: 70px;
+}
+
+.elementoRepetido,
+.realizado,
+.llenarCampos,
+.noExiste,
+.descuentoMayor
+{
+    margin: 15px 0px;
+}
+
+.llenarCampos::after,
+.noExiste::after,
+.elementoRepetido::after,
+.realizado::after,
+.descuentoMayor
+{
+    background-color: red;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.realizado::after
+{
+    content: 'Realizado';
+    background-color: green;
+}
+
+.elementoRepetido::after
+{
+    content: 'Este elemento ya existe';
+}
+
+.llenarCampos::after
+{
+    content: 'Por favor compruebe que todos los campos estan llenos';
+}
+
+.noExiste::after
+{
+    content: 'Este elemento no existe';
+}
+
+.descuentoMayor::after
+{
+    content: 'El precio antiguo no puede ser menor al precio actual';
+}

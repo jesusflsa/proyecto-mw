@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header
+{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    padding: 0 8%;
+    justify-content: space-between;
+    box-shadow: 0 -15px 20px #000;
+    position: fixed;
+    background-color: #fff;
+    margin-top: -72px;
+    z-index: 100;
+}
+.navbar
+{
+    width: 100%;
+    display: inherit;
+    width: 50%;
+    align-items: center;
+}
+
+/* Izquierda */
+.navbar_left
+{
+    justify-content: left;
+    padding: 0 10px;
+}
+.navbar_left ul li
+{
+    display: inline-block;
+    font-size: 1em;
+    color: #969696;
+    transition: .25s;
+}
+.navbar_left ul li a:visited,
+.navbar_left ul li a
+{
+    text-decoration: none;
+    color: #969696;
+    transition: .25s;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+.navbar_left ul li a:hover
+{
+    color: #0B0D17;
+    text-decoration: underline;
+}
+
+/* Centro */
+.navbar_center
+{
+
+    max-width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_center img
+{
+    height: 35px;
+}
+
+/* Derecha */
+.navbar_right
+{
+    justify-content: right;
+    padding: 0 10px;
+}
+.navbar_right a
+{
+    background-color: #0B0D1710;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    transition: .15s;
+    margin: 0 10px;
+}
+
+.navbar_right a i
+{
+    color: #969BAB;
+    padding: 15px;
+    transition: .15s;
+}
+.navbar_right a:hover
+{
+    background-color: #0B0D1750;
+}
+.navbar_right a i:hover
+{
+    color: #fff;
+}
+
+#carrito-icon
+{
+    height: 80%;
+    align-items: center;
+    display: flex;
+    margin-left: 2%;
+    cursor: pointer;
+}
+#carrito-icon img
+{
+    height: 60%;
+}
+
+/* Contenido */
+main
+{
+    margin-top: 72px;
+}
+/* Footer */
+footer
+{
+    width: 100%;
+    height: 250px;
+    background-color: #1d1d1d;
+    padding: 24px 165px;
+    text-align: center;
+}
+footer > *, footer img
+{
+    margin: 24px 0;
+}
+footer a img
+{
+    height: 28px;
+}
+footer ul
+{
+    display: block;
+}
+footer ul li
+{
+    display: inline;
+    margin: 0 10px;
+}
+footer ul li a,
+footer ul li a:visited
+{
+    color:#fff;
+    text-decoration: none;
+}
+footer ul li a:hover
+{
+    color:#fff;
+    text-decoration: underline;
+}
+/* Derecha */
+.footer_right
+{
+    justify-content: right;
+    padding: 0 5px;
+    width: 100%;
+    display: flex;
+    align-items: right;
+}
+.footer_right a
+{
+    border-radius: 100%;
+    aspect-ratio: 1;
+    transition: .15s;
+    margin: 0 10px;
+}
+.footer_right a i
+{
+    color: #fff;
+    padding: 10px;
+    transition: .15s;
+}
+.footer_right a:hover
+{
+    background-color: #fff;
+}
+.footer_right a i:hover
+{
+    color: #000000;
+}
+del
+{
+    color: #969BAB;
+}
