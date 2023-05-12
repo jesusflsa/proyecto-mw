@@ -11,5 +11,6 @@ preguntas.forEach(pregunta => {
         }
 
         respuesta.style.height = `${height}px`
+        
     })
 });
