@@ -135,11 +135,28 @@ xhr.onreadystatechange = function () {
 
             /* Imprimir los 6 primeros items */
             for (let i = 0; i < datos.length && i < 6; i++) {
+                let pagina = datos[inCat[i][0]].categoria;
+
+                switch (pagina) {
+                    case "Hombres":
+                        pagina = "hombres";
+                        break;
+                    case "Mujeres":
+                        pagina = "mujeres";
+                        break;
+                    case "Niños":
+                        pagina = "ninos";
+                        break;
+                    default:
+                        break;
+                        
+                }
+                
                 if (datos[inCat[i][0]].descuento == '') {
-                    document.querySelector('.promociones_items').innerHTML += `<div class="promocion_item"><div class="promocion_img"><a href="paginas/${datos[inCat[i][0]].categoria}.html"><img src=${datos[inCat[i][0]].imagen} alt=""></a></div><div class="promocion_item_desc"><h3>${datos[inCat[i][0]].nombre}</h3><div class="promocion_item_price"><p class="promocion_item_price">S/. ${datos[inCat[i][0]].precio}</p></div></div></div>`
+                    document.querySelector('.promociones_items').innerHTML += `<div class="promocion_item"><div class="promocion_img"><a href="paginas/${pagina}.html"><img src=${datos[inCat[i][0]].imagen} alt=""></a></div><div class="promocion_item_desc"><h3>${datos[inCat[i][0]].nombre}</h3><div class="promocion_item_price"><p class="promocion_item_price">S/. ${datos[inCat[i][0]].precio}</p></div></div></div>`
                 }
                 else {
-                    document.querySelector('.promociones_items').innerHTML += `<div class="promocion_item"><div class="promocion_img"><a href="paginas/${datos[inCat[i][0]].categoria}.html"><img src=${datos[inCat[i][0]].imagen} alt=""></a></div><div class="promocion_item_desc"><h3>${datos[inCat[i][0]].nombre}</h3><div class="promocion_item_price"><del class="promocion_item_price">S/. ${datos[inCat[i][0]].descuento}</del><p class="promocion_item_price">S/. ${datos[inCat[i][0]].precio}</p></div></div></div>`
+                    document.querySelector('.promociones_items').innerHTML += `<div class="promocion_item"><div class="promocion_img"><a href="paginas/${pagina}.html"><img src=${datos[inCat[i][0]].imagen} alt=""></a></div><div class="promocion_item_desc"><h3>${datos[inCat[i][0]].nombre}</h3><div class="promocion_item_price"><del class="promocion_item_price">S/. ${datos[inCat[i][0]].descuento}</del><p class="promocion_item_price">S/. ${datos[inCat[i][0]].precio}</p></div></div></div>`
                 }
             }
         }
