@@ -150,9 +150,9 @@ xhr.onreadystatechange = function () {
 }
 
 if (document.querySelector('title').innerHTML !== 'Inicio') {
-    xhr.open('GET', 'js/catalogo.json', true);
+    xhr.open('GET', '../js/catalogo.json', true);
 }
 else {
-    xhr.open('GET', '../js/catalogo.json', true);
+    xhr.open('GET', 'js/catalogo.json', true);
 }
 xhr.send()
