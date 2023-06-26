@@ -69,6 +69,12 @@ header
 .navbar_center img
 {
     height: 35px;
+    transition: all .2s;
+}
+
+.navbar_center img:hover
+{
+    transform: scarle(1.1);
 }
 
 /* Derecha */
