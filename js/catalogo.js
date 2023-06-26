@@ -149,5 +149,10 @@ xhr.onreadystatechange = function () {
     }
 }
 
-xhr.open('GET', '../js/catalogo.json', true);
+if (document.querySelector('title').innerHTML !== 'Inicio') {
+    xhr.open('GET', 'js/catalogo.json', true);
+}
+else {
+    xhr.open('GET', '../js/catalogo.json', true);
+}
 xhr.send()
