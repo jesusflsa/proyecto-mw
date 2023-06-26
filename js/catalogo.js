@@ -94,10 +94,10 @@ xhr.onreadystatechange = function () {
         }
 
         /* Boton del filtrar en los Catalogos*/
-        const filtroBtn = document.getElementById('filtro');
-
-        filtroBtn.addEventListener('click', () => {
-            const valorFiltro = document.getElementById('filtrar').value;
+        
+        const btnFiltrar = document.getElementById('filtrar');
+        btnFiltrar.addEventListener('change', () => {
+            const valorFiltro = btnFiltrar.value;
 
             switch (valorFiltro) {
                 case 'menor-precio':
@@ -112,8 +112,7 @@ xhr.onreadystatechange = function () {
                     ordenarCatalogo(orden);
                     break;
             }
-        })
-
+        } )
 
         /* Ordenar Catalogo en la pestaña Inicio */
         if (categoria !== 'Inicio') {
