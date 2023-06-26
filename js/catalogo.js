@@ -69,10 +69,10 @@ xhr.onreadystatechange = function () {
 
             for (let i = 0; i < orden.length; i++) {
                 if (datos[orCat[i][0]].descuento === '') {
-                    catalogoContenedor.innerHTML += `<div class="catalogo_item"><div class="catalogo_img"><img src=${datos[orCat[i][0]].imagen} alt=""></div><div class="catalogo_desc"><div class="catalogo_item_price"><h3>${datos[orCat[i][0]].nombre}</h3><div class="catalogo_item_price_value"><p>S/.${datos[orCat[i][0]].precio}</p></div></div><div class="catalogo_item_carrito"><img src="../img/carrito.png" alt="add"></div></div></div>`
+                    catalogoContenedor.innerHTML += `<div class="catalogo_item"><div class="catalogo_img"><img src=../${datos[orCat[i][0]].imagen} alt=""></div><div class="catalogo_desc"><div class="catalogo_item_price"><h3>${datos[orCat[i][0]].nombre}</h3><div class="catalogo_item_price_value"><p>S/.${datos[orCat[i][0]].precio}</p></div></div><div class="catalogo_item_carrito"><img src="../img/carrito.png" alt="add"></div></div></div>`
                 }
                 else {
-                    catalogoContenedor.innerHTML += `<div class="catalogo_item"><div class="catalogo_img"><img src=${datos[orCat[i][0]].imagen} alt=""></div><div class="catalogo_desc"><div class="catalogo_item_price"><h3>${datos[orCat[i][0]].nombre}</h3><div class="catalogo_item_price_value"><del>S/.${datos[orCat[i][0]].descuento}</del><p>S/.${datos[orCat[i][0]].precio}</p></div></div><div class="catalogo_item_carrito"><img src="../img/carrito.png" alt="add"></div></div></div>`
+                    catalogoContenedor.innerHTML += `<div class="catalogo_item"><div class="catalogo_img"><img src=../${datos[orCat[i][0]].imagen} alt=""></div><div class="catalogo_desc"><div class="catalogo_item_price"><h3>${datos[orCat[i][0]].nombre}</h3><div class="catalogo_item_price_value"><del>S/.${datos[orCat[i][0]].descuento}</del><p>S/.${datos[orCat[i][0]].precio}</p></div></div><div class="catalogo_item_carrito"><img src="../img/carrito.png" alt="add"></div></div></div>`
                 }
             }
         }
